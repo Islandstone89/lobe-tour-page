@@ -18,6 +18,11 @@
     --fw--medium: 500;
 }
 
+@font-face {
+    font-family: "test";
+    src: url(fonts\lab_grotesque_regular.woff2),
+}
+
 /* CSS Reset */
 
 /* Box sizing rules */
@@ -121,8 +126,9 @@ li {
 }
 
 .logo {
-    width: 10%;
+    width: 20%;
 }
+
 
 body {
     display: flex;
@@ -137,21 +143,12 @@ body {
 
 /* HEADER */
 
-.header {
-    position: sticky;
-    top: 0;
-}
-
 .navbar {
     display: flex;
     align-items: center;
     gap: 2rem;
     font-size: var(--fs--medium);
     font-weight: var(--fw--medium);
-}
-
-.logo-wrapper {
-    width: 50%;
 }
 
 .menu {
@@ -243,3 +240,10 @@ footer svg {
     border-radius: 50%;
     padding: 20%;
 }
+
+footer svg:is(:hover, :focus) {
+    opacity: .6;
+    transition: .25s ease-in;
+}
+
+
